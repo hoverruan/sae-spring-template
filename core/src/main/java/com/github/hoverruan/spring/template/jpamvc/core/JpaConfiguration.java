@@ -1,6 +1,5 @@
 package com.github.hoverruan.spring.template.jpamvc.core;
 
-import org.hibernate.cache.HashtableCacheProvider;
 import org.hibernate.dialect.H2Dialect;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -24,7 +23,6 @@ public class JpaConfiguration {
     public Map<String, Object> jpaProperties() {
         Map<String, Object> props = new HashMap<String, Object>();
         props.put("hibernate.dialect", H2Dialect.class.getName());
-        props.put("hibernate.cache.provider_class", HashtableCacheProvider.class.getName());
 
         return props;
     }
