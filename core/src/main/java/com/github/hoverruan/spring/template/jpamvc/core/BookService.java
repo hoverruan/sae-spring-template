@@ -15,7 +15,6 @@ public class BookService {
 
     public void persist(Book book) {
         entityManager.persist(book);
-        entityManager.flush();
     }
 
     @Transactional(readOnly = true)
