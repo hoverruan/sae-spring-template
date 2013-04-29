@@ -206,6 +206,12 @@
 					<webAppConfig>
 						<contextPath>/</contextPath>
 					</webAppConfig>
+					<systemProperties>
+						<systemProperty>
+							<name>spring.profiles.active</name>
+							<value>dev</value>
+						</systemProperty>
+					</systemProperties>
 					<stopKey>jetty-stop</stopKey>
 					<stopPort>9966</stopPort>
 				</configuration>
