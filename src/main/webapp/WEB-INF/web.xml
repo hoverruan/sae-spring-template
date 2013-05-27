@@ -14,6 +14,8 @@
 		<param-value>prod</param-value>
 	</context-param>
 
+	<distributable/>
+
 	<filter>
 		<filter-name>OpenEntityManagerInViewFilter</filter-name>
 		<filter-class>org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter</filter-class>
