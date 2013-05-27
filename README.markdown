@@ -85,3 +85,9 @@
 执行Maven的Jetty Plugin：
 
     mvn jetty:run
+
+## 打包应用
+
+执行下面的Maven命令打包，然后上传到SAE：
+
+    mvn package
