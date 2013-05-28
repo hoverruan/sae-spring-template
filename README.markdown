@@ -1,6 +1,11 @@
 # SAE Spring Project Template
 
-这是一个用于SAE的Java环境的项目模版，使用Maven作为构建工具，集成了 sae-local.jar
+这是一个用于SAE的Java环境的项目模版，使用Maven作为构建工具：
+
+- 使用Spring3 MVC + JPA
+- 可以在本地使用Jetty Plugin直接启动服务
+- 支持本地和线上使用不同的Profile来进行开发
+- 集成了 sae-local-1.1.0.jar
 
 ## 配置
 
