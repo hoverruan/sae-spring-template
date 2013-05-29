@@ -25,6 +25,6 @@ public class IndexController {
 
         return new ModelAndView("index")
                 .addObject(book)
-                .addObject(bookService.findBooks());
+                .addObject(bookService.findNewestBooks());
     }
 }

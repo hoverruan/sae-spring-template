@@ -18,7 +18,9 @@ public class BookService {
     }
 
     @Transactional(readOnly = true)
-    public List<Book> findBooks() {
-        return entityManager.createQuery("select o from Book o", Book.class).getResultList();
+    public List<Book> findNewestBooks() {
+        return entityManager.createQuery("select o from Book o order by o.id desc", Book.class)
+                .setMaxResults(10)
+                .getResultList();
     }
 }
